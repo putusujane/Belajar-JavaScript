@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Output JavaScript">
+        <meta name="keywords" content="Output, JavaScript">
+        <meta name="author" content="Putu Su">
+
+        <title>Output JavaScript</title>
+
+        <!-- Internal CSS -->
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <section class="title-desc">
+                <h1>Output JavaScript</h1>
+                <p>Belajar output pada JavaScript.</p>
+            </section>
+
+            <!-- Navigation -->
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Support</a>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Aside -->
+            <aside>
+                <section>
+                    <h3>Web Development</h3>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">MySQL</a></li>
+                </section>
+            </aside>
+
+            <!-- Article -->
+            <article>
+                <section>
+                    <h2 style="text-align: center;">Cara-cara Menampilkan Data Pada JavaScript di HTML</h2>
+                    <p>Menampilkan data menggunakan JavaScript di HTML yaitu:</p>
+                    <ul>
+                        <li>Menulis kedalam elemen HTML menggunakan <code>innerHTML</code></li>
+                        <li>Menulis kedalam output menggunakan <code>document.write()</code></li>
+                        <li>Menggunakan kotak alert (peringatan) menggunakan <code>window.alert()</code></li>
+                        <li>Menggunakan console browser, menggunakan <code>console.log()</code></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Menulis Menggunakan <code>innerHTML</code></h2>
+                    <p>Untuk mengakses elemen HTML</p>
+
+                    <div id="divisi1"></div>
+                </section>
+
+                <section>
+                    <h2>Menggunakan <code>document.write()</code></h2>
+                    <p>Untuk tujuan pengujian.</p>
+                    
+                    <div id="divisi2"></div>
+                    <button type="button" onclick="document.write(1 + 2)">Show</button>
+                </section>
+
+                <section>
+                    <h2>Menggunakan <code>window.alert()</code></h2>
+                    <p>Untuk pengujian dan menampilkan di console browser.</p>
+
+                </section>
+
+                <section>
+                    <h2>Mencetak Konten</h2>
+
+                    <p>Kita bisa mencetakn konten dari jendela saat ini
+                        menggunakan <code>window.print()</code>
+                    </p>
+
+                    <button onclick="window.print()">Cetak</button>
+                </section>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2022. Putu Su.</p>
+        </footer>
+
+        <!-- JavaScript External File -->
+        <script src="script.js"></script>
+    </body>
+</html>
