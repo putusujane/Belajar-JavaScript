@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Dimana meletakkan JavaScript?">
+        <meta name="keywords" content="JavaScript, Dasar, Basic">
+        <meta name="author" content="Putu Su">
+
+        <title>Dimana Meletakkan JavaScript?</title>
+
+        <!-- Internal CSS -->
+        <style>
+            
+        </style>
+
+        <!-- Internal JavaScript -->
+        <script>
+            function myFunctionF() {
+                document.getElementById("demo1").innerHTML = "Telah diubah.";
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <section class="title-desc">
+                <h1>Dimana Meletakkan JavaScript?</h1>
+                <p>Dimana meletakkan kode JavaScript?.</p>
+            </section>
+
+            <!-- Navigation -->
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+                <a href="#">Support</a>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Article -->
+            <article>
+                <section>
+                    <h2>Dimana Meletakkan Kode JavaScript?</h2>
+                    <p>Dalam HTML, kode JavaScript diletakkan diantara tag <code>script</script></code>.</p>
+                </section>
+
+                <section>
+                    <h2>Apa itu Function dan Event Pada JavaScript?</h2>
+                    <p><code>function</code> adalah blok code JavaScript, yang dapat dieksekusi
+                    saat "dipanggil". Misal: suatu fungsi dapat dipanggil ketika suatu event/peristiwa
+                terjadi, seperti ketika pengguna menekan tombol.</p>
+                </section>
+
+                <section>
+                    <h2>Dapat Diletakkan Diantara Tag <code>head</code> atau <code>body</code></h2>
+
+                    <p>Dalam contoh ini, fungsi ditempatkan diantara <code>head</code>.
+                    fungsi dipanggil ketika tombol diklik.</p>
+
+                    <p id="demo1">Ini adalah paragraf.</p>
+                    <button type="button" onclick="myFunctionF()">Ubah</button>
+                </section>
+
+                <section>
+                    <h2>Dapat Diletakkan Diantara Tag <code>body</code></h2>
+                    <p>Dalam contoh ini, fungsi ditempatkan diantara <code>body</code>.
+                    fungsi dipanggil ketika tombol diklik.</p>
+
+                    <p id="demo2">Ini adalah teks paragraf.</p>
+                    <button type="button" onclick="myFunctionX()">Ubah</button>
+
+                    <script>
+                        function myFunctionX() {
+                            document.getElementById("demo2").innerHTML = "Telah diubah";
+                        }
+                    </script>
+                </section>
+
+                <section>
+                    <h2>Diletakkan Pada File External (script.js)</h2>
+                    <p>Pada contoh ini mengarah ke file "script.js" . Fungsi diletakkan didalam
+                        file "script.js".
+                    </p>
+
+                    <p id="demo3">Contoh paragraf.</p>
+
+                    <button type="button" onclick="myFunctionY()">Ubah</button>
+                </section>
+
+                <section>
+                    <h2>Diletakkan Pada URL Eksternal</h2>
+
+                    <p id="demo">Hello World!</p>
+
+                    <script src="https://www.w3schools.com/js/myScript.js"></script>
+                    <button type="button" onclick="myFunction()">Ubah</button>
+                </section>
+
+                <section>
+                    <h2>Diletakkan Pada Folder Eksternal</h2>
+
+                    <p id="demo4">Lorem ipsum</p>
+                    <button type="button" onclick="fungsiku()">Ubah</button>
+                    <script src="/W3Schools/js/script.js"></script>
+                </section>
+
+                <section>
+                    <h2>Keuntungan Eksternal JavaScript</h2>
+                    <ul>
+                        <li>Memisahkan dengan kode HTML</li>
+                        <li>Membuat HTML dan JavaScript lebih mudah dibaca dan dipelihara.</li>
+                        <li>File JavaScript yang di-cache dapat mempercepat pemuatan halaman.</li>
+                    </ul>
+                </section>
+            </article>
+
+            <!-- Aside -->
+            <aside>
+                <section>
+                    <h3>Web Development</h3>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">MySQL</a></li>
+                </section>
+            </aside>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2022. Putu Su.</p>
+        </footer>
+
+        <!-- JavaScript External File -->
+        <script src="script.js"></script>
+    </body>
+</html>
