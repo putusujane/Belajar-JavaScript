@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Apa yang bisa dilakukan JavaScript?">
+        <meta name="keywords" content="JavaScript, Dasar, Basic">
+        <meta name="author" content="Putu Su">
+
+        <title>Apa Yang Bisa Dilakukan JavaScript?</title>
+
+        <!-- Internal CSS -->
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <section class="title-desc">
+                <h1>Apa Yang Bisa Dilakukan JavaScript?</h1>
+                <p>JavaScript bisa melakukan apa saja?.</p>
+            </section>
+
+            <!-- Navigation -->
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+                <a href="#">Support</a>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Article -->
+            <article>
+                <section>
+                    <h2>JavaScript Bisa Mengubah Konten HTML</h2>
+                    <p>Salah satu dari banyak metode digunakan adalah <code>getElementById()</code>.</p>
+                    
+                    <p>Contoh dibawah ini mencari elemen HTML dengan id "hello", dan mengubah
+                    konten elemen menjadi "Hello, JavaScript".</p>
+
+                    <div id="hello">Hello, World!</div>
+                    <br>
+                    <div id="demo1">Selamat datang!</div>
+
+                    <button type="button" onclick='document.getElementById("demo1").innerHTML = "Sampai jumpa!";'>Ubah</button>
+
+                    <p><strong>Catatan!:</strong> JavaScript bisa menggunakan tanda kutip tunggal dan ganda.</p>
+                </section>
+
+                <section>
+                    <h2>JavaScript Dapat Mengubah Nilai Atribut HTML</h2>
+
+                    <p>JavaScript dapat mengubah nilai <code>src</code> atribut (Sumber)
+                    dari sebuah tag <code>img</code>.</p>
+
+                    <div style="text-align: center;">
+                        <button onclick="document.getElementById('lampu').src = 'https://www.w3schools.com/js/pic_bulbon.gif'">ON</button>
+
+                        <img id="lampu" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Lampu Off">
+
+                        <button onclick="document.getElementById('lampu').src = 'https://www.w3schools.com/js/pic_bulboff.gif'">OFF</button>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>JavaScript Dapat Mengubah Style CSS di HTML</h2>
+
+                    <p>Mengubah style elemen HTML dengan mengubah atribut CSS.</p>
+
+                    <p id="demoA">Ukuran teks ini menjadi besar, Warna menjadi merah.</p>
+                    <button type="button" onclick="document.getElementById('demoA').style.fontSize = '20px'; document.getElementById('demoA').style.color = 'red'">Ubah</button>
+                </section>
+
+                <section>
+                    <h2>JavaScript Dapat Menyembunyikan Elemen HTML</h2>
+                    <p>Dapat dilakukan dengan mengubah atribut <code>display: none;</code></p>
+
+                    <p id="demoB">Teks ini akan hilang.</p>
+                    <button type="button" onclick="document.getElementById('demoB').style.display = 'none'">Ubah</button>
+                </section>
+
+                <section>
+                    <h2>JavaScript Dapat Menampilkan Elemen HTML</h2>
+                    <p>Dapat dilakukan dengan mengubah atribut style <code>display: block;</code>.</p>
+
+                    <p id="demoC" style="display: none;">Teks ini akan tampil.</p>
+                    <button type="button" onclick="document.getElementById('demoC').style.display = 'block'">Tampilkan</button>
+                </section>
+            </article>
+
+            <!-- Aside -->
+            <aside>
+                <section>
+                    <h3>Web Development</h3>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">MySQL</a></li>
+                </section>
+            </aside>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2022. Putu Su.</p>
+        </footer>
+
+        <!-- JavaScript External File -->
+        <script src="script.js"></script>
+    </body>
+</html>
