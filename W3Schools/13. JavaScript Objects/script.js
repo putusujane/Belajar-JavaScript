@@ -58,5 +58,6 @@ const person5 = {
 document.getElementById("demo6").innerHTML = "Nama lengkap: " + person5.fullName();
 
 // Jika kita mengakses method objek tanpa tanda () , akan mereturn mentahan function itu sendiri.
-console.log(person5.fullName);
-console.log(typeof person5.fullName());
+console.log(typeof person5);      // Object
+console.log(typeof person5.fullName);       // Function 
+console.log(typeof person5.fullName());       // String 
