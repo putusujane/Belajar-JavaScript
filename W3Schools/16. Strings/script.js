@@ -89,3 +89,27 @@ console.log("\nNewLine");
 console.log("\rLorem\r Ipsum");
 console.log("\tHello");
 console.log("\vWorld!\vsdsd");
+
+
+// String sebagai Objek
+let x = "Putu";
+let y = new String("Putu");
+
+console.log(typeof x);
+console.log(typeof y);
+
+bool1 = x == y;
+console.log(bool1);
+
+bool2 = x === y;
+console.log(bool2);
+
+// Komparasi Kedua Objek String
+data_bool1 = new String("Putu");
+data_bool2 = new String("Putu");
+
+hasil_bool = data_bool1 == data_bool2;
+console.log(hasil_bool);
+
+hasil_boolX = data_bool1 === data_bool2;
+console.log(hasil_boolX);
