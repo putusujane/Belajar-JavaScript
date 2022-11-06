@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="JavaScript Events">
+        <meta name="keywords" content="JavaScript, Events">
+        <meta name="author" content="Putu Su">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>JavaScript Events</title>
+
+        <!-- Internal JavaScript -->
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <section class="title-desc">
+                <h1>JavaScript Events</h1>
+                <p>Belajar JavaScript Events.</p>
+            </section>
+
+            <!-- Navigation -->
+            <nav>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Support</a></li>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Aside -->
+            <aside>
+                <section>
+                    <h2>Web Development</h2>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">MySQL</a></li>
+                </section>
+            </aside>
+            
+            <!-- Article -->
+            <article>
+                <section>
+                    <h2>An Onclick Event Changes an HTML Elements</h2>
+                    <p>Event <code>onclick</code> untuk mengubah elemen HTML.</p>
+
+                    <button type="button" onclick="myFunction1()">Tanggal</button>
+
+                    <p id="demo1"></p>
+                </section>
+
+                <section>
+                    <h2>An Onclick Event Changes Its Own Elements</h2>
+                    <p>Event <code>onclick</code> mengubah elemen itu sendiri.</p>
+
+                    <button type="button" id="demo2" onclick="myFunction2()">Tanggal berapa?</button>
+                </section>
+
+                <section>
+                    <h2>Menampilkan Tanggal</h2>
+
+                    <button type="button" onclick="this.innerHTML = Date();">Tanggal</button>
+                </section>
+
+                <button onmouseover="this.innerHTML = Date();">Hover</button>
+
+                <br>
+
+                <button type="button" id="demo3">Normal</button>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2022. Putu Su.</p>
+        </footer>
+
+        <!-- JavaScript External File -->
+        <script src="script.js"></script>
+    </body>
+</html>
