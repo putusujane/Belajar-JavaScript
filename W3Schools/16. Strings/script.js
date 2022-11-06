@@ -65,3 +65,27 @@ let dataStr = "a, b, c, d, e, f, g";
 const data_array = dataStr.split(",", 3);
 
 document.getElementById("demo12").innerHTML = data_array[2];    // Jika Nilai index 3, undefined.
+
+
+// Escape Character
+
+/*
+    \'
+    \"
+    \\
+
+    \b      digunakan untuk Backspace
+    \f      digunakan untuk Form Feed
+    \n      digunakan untuk New Line
+    \r      digunakan untuk Carriage Return
+    \t      Horizontal Tabulator
+    \v      Vertical Tabulator
+*/
+
+console.log("\\user");
+console.log("\bUjicoba\b alakadar");
+console.log("\fHello World!");
+console.log("\nNewLine");
+console.log("\rLorem\r Ipsum");
+console.log("\tHello");
+console.log("\vWorld!\vsdsd");
