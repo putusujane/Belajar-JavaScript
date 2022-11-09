@@ -102,5 +102,68 @@ document.writeln(dataNaN + dataAngka);
 // Concatenate Angka String Dengan Number
 document.writeln("5" + NaN);
 
-// Tipe Data NaN
+// Tipe Data NaN adalah Number
 document.writeln(typeof NaN);
+
+// Hasil Infinity Jika Kita Menjumlahkan Angka Melebihi Batas Kemungkinan.
+let angka1 = 2;
+let txt = "";
+
+while (angka1 != Infinity) {
+    angka1 *= angka1;
+    txt += angka1 + "<br>";
+}
+
+document.getElementById("demo14").innerHTML = txt;
+
+// Dibagi dengan angkan nol menghasilkan nilai Infinity
+let nilaiA = 10 / 0;        // Infinity
+let nilaiB = -2 / 0;        // Infinity
+
+document.getElementById("demo15").innerHTML = "10 / 0 = " + nilaiA + "<br>" +
+"-2 / 0 = " + nilaiB;
+
+// Nilai Infinity bertipe number
+console.log(typeof Infinity);
+console.log(typeof nilaiB);
+
+// Menulis Numeric Constant Menghasilkan Nilai Hexadecimal
+let valX = 0xFF;
+
+document.getElementById("demo16").innerHTML = "0xFF = " + valX;
+
+// Menggunakan Method toString() Menghasilkan Nilai Hex, Octal, dan Binary
+    // Method ini bisa mengeluarkan numbers dari berbasis 2 ke 36.
+
+let myNumber = 32;
+
+document.getElementById("demo17").innerHTML = "Decimal 32 = " + "<br><br>" +
+"Hexatrigesimal (base 36): " + myNumber.toString(36) + "<br>" +
+"Duotrigesimal (base 32): " + myNumber.toString(32) + "<br>" +
+"Hexadecimal (base 16): " + myNumber.toString(16) + "<br>" +
+"Duodecimal (base 12): " + myNumber.toString(12) + "<br>" +
+"Decimal (base 10): " + myNumber.toString(10) + "<br>" +
+"Octal (base 8): " + myNumber.toString(8) + "<br>" +
+"Binary (base 2): " + myNumber.toString(2);
+
+// Number Bisa Menjadi Objek
+    // valA adalah number
+let valA = 123;
+
+    // valB adalah number objek
+let valB = new Number(123);
+
+document.getElementById("demo18").innerHTML = typeof valA + "<br>" + typeof valB;
+
+// Number dan Number Objek Tidak Aman Untuk dikomparasi
+let $data1 = 500;
+let $data2 = new Number(500);
+
+document.getElementById("demo19").innerHTML = ($data1 == $data2) + "<br>" + ($data1 === $data2);
+
+// Objek dan Objek Tidak Aman Untuk Dikomparasi
+let $nilaiX = new Number(123);
+
+let $nilaiY = new Number(123);
+
+document.getElementById("demo20").innerHTML = ($nilaiX == $nilaiY) + "<br>" + ($nilaiX === $nilaiY);
