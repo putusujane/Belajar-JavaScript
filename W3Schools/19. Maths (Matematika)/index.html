@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="JavaScript Math">
+        <meta name="keywords" content="JavaScript, Math">
+        <meta name="author" content="Putu Su">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/W3Schools/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/W3Schools/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/W3Schools/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/W3Schools/favicon-16x16.png">
+        <link rel="manifest" href="/W3Schools/site.webmanifest">
+        
+        <!-- Title Bar -->
+        <title>JavaScript Math</title>
+
+        <!-- Internal CSS -->
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <section class="title-desc">
+                <h1>JavaScript Math</h1>
+                <p>Belajar JavaScript Math.</p>
+            </section>
+
+            <!-- Navigation -->
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+                <a href="#">Support</a>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Aside -->
+            <aside>
+                <section>
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">MySQL</a></li>
+                    </ul>
+                </section>
+            </aside>
+            
+            <!-- Article -->
+            <article>
+                <section>
+                    <h2><code>Math.PI</code> Returns the Value of PI</h2>
+
+                    <p><code>Math.PI</code> returns the ratio of a circle's circumference
+                    to its diameter:</p>
+
+                    <p id="demo1"></p>
+                </section>
+
+                <section>
+                    <h2><code>Math.round(x)</code> Returns the Rounded Value of x</h2>
+                    <p><code>Math.round(x)</code> adalah method mengembalikan nilai dari
+                    variabel x menjadi pembulatan yang mendekati angka integer tersebut.</p>
+
+                    <p id="demo2"></p>
+                </section>
+
+                <section>
+                    <h2>Konversi Satuan Suhu Celcius ke Fahrenheit</h2>
+                    <p>Masukkan angka kedalah inputan dibawah ini:</p>
+
+                    <form action="action_page.php">
+                        <input type="text" name="celcius" id="celcius" onkeyup="konversi('celcius');" required placeholder="Temperature">
+                        <label for="celcius">°Celcius</label>
+                        <br> <br>
+                        <input type="text" name="fahrenheit" id="fahrenheit" onkeyup="konversi('fahrenheit');" required placeholder="Temperature">
+                        <label for="fahrenheit">°Fahrenheit</label>
+                    </form>
+
+                    <p><strong>Catatan: </strong><code>Math.round()</code> method digunakan,
+                    jadi hasilnya akan menampilkan data Integer.</p>
+                </section>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2022. Putu Su.</p>
+        </footer>
+
+        <!-- JavaScript External File -->
+        <script src="script.js"></script>
+    </body>
+</html>
