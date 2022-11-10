@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="JavaScript Number Methods">
+        <meta name="keywords" content="JavaScript, Number Method">
+        <meta name="author" content="Putu Su">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>JavaScript Number Methods</title>
+
+        <!-- Internal CSS -->
+        <style>
+            
+            /* Clearing */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                padding: 15px;
+                background-color: brown;
+            }
+
+            header h1, header p {
+                color: white;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: white;
+
+                margin: 0 8px;
+                padding: 15px 0;
+                transition: color 0.6s;
+            }
+
+            nav a:hover {
+                color: tomato;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <section class="title-desc">
+                <h1>JavaScript Number Methods</h1>
+                <p>Belajar JavaScript number methods.</p>
+            </section>
+
+            <!-- Navigation -->
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+                <a href="#">Support</a>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Aside -->
+            <aside>
+                <section>
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">MySQL</a></li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- Article -->
+            <article>
+                <section>
+                    <h2>The <code>toString()</code> Method Converts a Number to a String</h2>
+                    <p>Metode <code>toString()</code> bisa mengeluarkan number berbasis
+                    2 sampai 36 :</p>
+
+                    <p id="demo1"></p>
+                </section>
+
+                <section>
+                    <h2>The <code>valueOf()</code> Method Returns a Number as a Number</h2>
+
+                    <p id="demo2"></p>
+                </section>
+
+                <section>
+                    <h2>The <code>toExponential()</code> Returns a Number With Expenonential Notation</h2>
+
+                    <p id="demo3"></p>
+                </section>
+
+                <section>
+                    <h2>The <code>toFixed()</code> Method Rounds a Number to a Number of Digits</h2>
+                    <p>Method <code>toFixed()</code> digunakan untuk membulatkan number untuk memberikan
+                    number digit.</p>
+
+                    <p id="demo4"></p>
+                </section>
+
+                <section>
+                    <h2>The <code>toPrecision()</code> Method a Number Written With a Specified Length</h2>
+
+                    <p id="demo5"></p>
+                </section>
+
+                <section>
+                    <h2>The Global Method <code>Number()</code> Converts Variables to Numbers</h2>
+                    <p>Mengkonversi variabel ke number menggunakan method global <code>Number()</code></p>
+
+                    <p id="demo6"></p>
+                </section>
+
+                <section>
+                    <h2>The <code>Number()</code> Can Even Convert Dates to Numbers</h2>
+                    <p>Method global <code>Number()</code> bisa konversi Tanggal ke Number.</p>
+
+                    <p id="demo7"></p>
+                </section>
+
+                <section>
+                    <h2>The Global Method <code>parseInt()</code> Converts Strings to Numbers</h2>
+                    <p>Konversi string ke number menggunakan function global <code>parseInt()</code></p>
+
+                    <p id="demo8"></p>
+                </section>
+
+                <section>
+                    <h2>Konversi String ke Float Menggunakan Global Method <code>parseFloat()</code></h2>
+
+                    <p id="demo9"></p>
+                </section>
+
+                <section>
+                    <h2><code>MAX_VALUE</code> and <code>MIN_VALUE</code> Returns the Largest, Smallest Possible Number</h2>
+                    <p>Menampilkan number yang terbesar dan terkecil di JavaScript.</p>
+
+                    <p id="demo10"></p>
+                    <p id="demo11"></p>
+                </section>
+
+                <section>
+                    <h2><code>POSITIVE_INFINITY</code> Property</h2>
+
+                    <p id="demo12"></p>
+                </section>
+
+                <section>
+                    <h2><code>NEGATIVE_INFINITY</code> Property</h2>
+
+                    <p id="demo13"></p>
+                </section>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2022. Putu Su.</p>
+        </footer>
+
+        <!-- JavaScript External File -->
+        <script src="script.js"></script>
+    </body>
+</html>
