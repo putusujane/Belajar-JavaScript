@@ -43,11 +43,14 @@ console.log("Value tertinggi adalah: "+ Math.max(0, 150, 30, 20, -8, -200, true)
 console.log("Nilai terendah adalah: " + Math.min(0, -0, 1, 50, 100, 150, -150));
 
 // Konversi Satuan Suhu Celcius ke Fahrenheit
-function konversi(degree) {
-    let x;
-    if (degree == "celcius") {
 
-        x = document.getElementById("celcius").value * 9 / 5 + 32;
+// Function konversi dengan parameter degree
+function konversi(degree) {
+
+    let x;      // Deklarasi variabel x.
+    if (degree == "celcius") {      // Pengkondisian if
+
+        x = document.getElementById("celcius").value * 9 / 5 + 32;      // Ekspresi mengambil value
         document.getElementById("fahrenheit").value = Math.round(x);
 
     } else {
@@ -55,4 +58,5 @@ function konversi(degree) {
         x = (document.getElementById("fahrenheit").value - 32) * 5 / 9;
         document.getElementById("celcius").value = Math.round(x);
     }
+
 }
