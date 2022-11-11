@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="JavaScript Random">
+        <meta name="keywords" content="JavaScript, Random">
+        <meta name="author" content="Putu Su">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/W3Schools/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/W3Schools/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/W3Schools/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/W3Schools/favicon-16x16.png">
+        <link rel="manifest" href="/W3Schools/site.webmanifest">
+        
+        <!-- Title Bar -->
+        <title>JavaScript Random</title>
+
+        <!-- Internal CSS -->
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <section class="title-desc">
+                <h1>JavaScript Random</h1>
+                <p>JavaScript Random</p>
+            </section>
+
+            <!-- Navigation -->
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+                <a href="#">Support</a>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Aside -->
+            <aside>
+                <section>
+                    <h3>Web Development</h3>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">MySQL</a></li>
+                </section>
+            </aside>
+
+            <!-- Article -->
+            <article>
+                <section>
+                    <h2>JavaScript Random</h2>
+                    <p><code>Math.rando()</code> mengembalikan angka acak antara 0 (inclusive),
+                     dan 1 (exclusive).</p>
+
+                     <p id="demo1"></p>
+                </section>
+
+                <section>
+                    <h2>Return Integer Between 0 and 9 (both included)</h2>
+                    <p>Menampilkan angka 0 sampai 9 (termasuk kedua angka tersebut).</p>
+
+                    <p id="demo2"></p>
+                </section>
+
+                <section>
+                    <h2>Return Integer Between 0 and 10 (both included)</h2>
+                    <p>Mengembalikan angka 0 sampai 10 (termasuk keduanya).</p>
+
+                    <p id="demo3"></p>
+                </section>
+
+                <section>
+                    <h2>Menampilkan Angka 0 sampai 99 (termasuk keduanya)</h2>
+
+                    <p id="demo4"></p>
+                </section>
+
+                <section>
+                    <h2>Menampilkan Angka 0 sampai 100 (termasuk keduanya)</h2>
+
+                    <p id="demo5"></p>
+                </section>
+
+                <section>
+                    <h2>Mereturn Angka Acak Antara x (included) dan y (excluded)</h2>
+
+                    <p>Setiak kali klik tombol dibawah, <code>getRndInt(min, max)</code>
+                     mereturn angka acak antara 0 sampai 9.</p>
+
+                     <button type="button" onclick="document.getElementById('demo6').innerHTML = 
+                     getRndInt(5, 10);">Acak</button>
+
+                     <p id="demo6"></p>
+                </section>
+
+                <section>
+                    <h2>Menampilkan angka acak antara x dan y (termasuk keduanya)</h2>
+
+                    <button type="button" onclick="document.getElementById('demo7').innerHTML = 
+                    rndInt(1, 10);">Acak Sekarang!</button>
+
+                    <p id="demo7"></p>
+                </section>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2022. Putu Su.</p>
+        </footer>
+
+        <!-- JavaScript External File -->
+        <script src="script.js"></script>
+    </body>
+</html>
