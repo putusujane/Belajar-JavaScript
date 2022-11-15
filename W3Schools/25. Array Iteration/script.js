@@ -93,10 +93,10 @@ function myFunction8(value, index, array) {
 
 // Array.findIndex() Mencari Index Angka Pertama Yang Lebih Dari 15
 const numbers9 = [4, 9, 16, 25, 29];
-let first2 = numbers9.findIndex(myFunction8);
+let first2 = numbers9.findIndex(myFunction9);
 
 document.writeln("<br>Index angka pertama diatas 15 adalah ", first2);
 
-function myFunction8(value, index, array) {
+function myFunction9(value, index, array) {
     return value > 15;
 }
