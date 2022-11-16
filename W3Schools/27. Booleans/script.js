@@ -42,8 +42,8 @@ let data_NaN = NaN;
 document.writeln("<br>NaN = ", Boolean(NaN));
 
 // Komparasi variabel dengan objek
-let x = false;
-let y = new Boolean(false);
+let x = false;                  // Tipe data boolean
+let y = new Boolean(false);     // Tipe data objek
 
 z = (x == y);       // Nilai true
 z3 = (x === y);     // Nilai false
