@@ -46,3 +46,48 @@ const myProfile = new Orang1("Putu", "Sujane", 27, "Black");
 
     // Display name and age
 document.getElementById("demo5").innerHTML = `${myProfile.fName} ${myProfile.lName}, ${myProfile.age} ${Orang1.fName}`;
+
+// Membuat Object Built-in Pada JavaScript
+let x1 = new Object();
+let x2 = new String();
+let x3 = new Number();
+let x4 = new Boolean();
+let x5 = new Array();
+let x6 = new RegExp();
+let x7 = new Function();
+let x8 = new Date();
+
+document.getElementById("demo6").innerHTML = `
+x1 = ${typeof x1}<br>x2 = ${typeof x2}<br>x3 = ${typeof x3}<br>x4 = ${typeof x4}<br>x5 = ${typeof x5}<br>x6 = ${typeof x6}<br> x7 = ${typeof x7}<br>x8 = ${typeof x8}`;
+
+// Cara Terbaik Membuat Variabel Pada JavaScript
+let y1 = {};
+let y2 = "";
+let y3 = 0;
+let y4 = false;
+let y5 = [];
+let y6 = /()/;
+let y7 = function(){};
+
+document.getElementById("demo7").innerHTML =
+`y1 = ${typeof y1}<br>
+y2 = ${typeof y2}<br>
+y3 = ${typeof y3}<br>
+y4 = ${typeof y4}<br>
+y5 = ${typeof y5}<br>
+y6 = ${typeof y6}<br>
+y7 = ${typeof y7}<br>`;
+
+// Function Pada JavaScript Adalah Bermutasi
+    // Merubah nilai dari object
+const personX = {
+    fName: "Putu",
+    lName: "Sujane",
+    age: 27,
+    eyeColor: "Black"
+};
+
+const x = personX;
+x.age = 30;
+
+document.getElementById("demo8").innerHTML = `${x.fName} ${x.lName} berumur ${x.age}`;
