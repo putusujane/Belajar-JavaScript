@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tag -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="JavaScript Objects">
+        <meta name="keywords" content="JavaScript, Objects">
+        <meta name="author" content="Putu Su">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/W3Schools/favicon.ico" type="image/x-icon">
+        
+        <!-- Title Tag -->
+        <title>JavaScript Objects</title>
+
+        <!-- Internal CSS -->
+        <style>
+
+            /* Tulis kode CSS disini! */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                padding: 10px;
+                background-color: brown;
+            }
+
+            header > * {
+                color: white;
+            }
+
+            header nav > a {
+                margin: 0 0 0 15px;
+                text-decoration: none;
+                color: white;
+            }
+
+            header, main, footer {
+                margin: 10px;
+            }
+
+            main article section > h2 {
+                margin: 10px 0 5px 0;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <section class="title-desc">
+                <h1>JavaScript Objects</h1>
+                <p>Belajar JavaScript objects.</p>
+            </section>
+
+            <!-- Navigaton -->
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+                <a href="#">Support</a>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <!-- Aside -->
+            <aside>
+                <section>
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">MySQL</a></li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- Article -->
+            <article>
+                <section>
+                    <h2>Belajar JavaScript Object</h2>
+                    <p>Didalam JavaScript, Object adalah raja. Jika kita paham Object, maka kita paham JavaScript.</p>
+
+                    <p>Dalam JavaScript, hampir "Semuanya" adalah Object. Contoh:</p>
+                    <ul>
+                        <li>Boolean bisa menjadi Object (Jika diartikan dengan keyword <code>new</code>)</li>
+                        <li>Number bisa menjadi Object (Jika diartikan dengan keyword <code>new</code>)</li>
+                        <li>String bisa menjadi Object (Jika diartikan dengan keyword <code>new</code>)</li>
+                        <li>Date selalu bertipe Object</li>
+                        <li>Math selalu bertipe Object</li>
+                        <li>Regular Expressions selalu bertipe Object</li>
+                        <li>Array selalu bertipe Object</li>
+                        <li>Function selalu bertipe Object</li>
+                        <li>Object selalu bertipe Object</li>
+                    </ul>
+
+                    <p>Semua nilai JavaScript, kecuali tipe data primitif, adalah Object.</p>
+                </section>
+
+                <section>
+                    <h2>JavaScript Primitives</h2>
+                    <p>Nilai primitif adalah nilai yang tidak mempunyai properti atau method.</p>
+                    <p><strong>3.14</strong> adalah nilai primitif.</p>
+                    <p>Tipe data primitif adalah data yang mempunyai nilai primitif.</p>
+
+                    <p>Diketahui JavaScript memiliki 7 tipe dari tipe data primitif.</p>
+                    <p>Contoh:</p>
+                    <ul>
+                        <li>string</li>
+                        <li>number</li>
+                        <li>boolean</li>
+                        <li>null</li>
+                        <li>undefined</li>
+                        <li>symbol</li>
+                        <li>bigint</li>
+                    </ul>
+
+                    <h3>Immutable</h3>
+                    <p>Data primitif adalah immutable (Data yang keras, tidak bisa diubah). <br>
+                    Jika <code>x = 3.14</code>, kamu bisa mengubah nilai dari <code>x</code>, tetapi kamu tidak bisa mengubah nilai dari <code>3.14</code>.</p>
+
+                    <table style="padding: 10px; border: 1px solid gray;">
+                        <tr class="tr1" style="text-align: center;">
+                            <th>Value</th>
+                            <th>Type</th>
+                            <th>Comment</th>
+                        </tr>
+
+                        <tr class="tr1" style="text-align: center;">
+                            <td>"Hello"</td>
+                            <td>string</td>
+                            <td>"Hello" selalu "Hello"</td>
+                        </tr>
+
+                        <tr class="tr1" style="text-align: center;">
+                            <td>3.14</td>
+                            <td>number</td>
+                            <td>3.14 selalu 3.14</td>
+                        </tr>
+
+                        <tr class="tr1" style="text-align: center;">
+                            <td>true</td>
+                            <td>boolean</td>
+                            <td>true selalu true</td>
+                        </tr>
+
+                        <tr class="tr1" style="text-align: center;">
+                            <td>false</td>
+                            <td>boolean</td>
+                            <td>false selalu false</td>
+                        </tr>
+
+                        <tr class="tr1" style="text-align: center;">
+                            <td>null</td>
+                            <td>null (Object)</td>
+                            <td>null selalu null</td>
+                        </tr>
+
+                        <tr class="tr1" style="text-align: center;">
+                            <td>undefined</td>
+                            <td>undefined</td>
+                            <td>undefined selalu undefined</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>Creating a JavaScript Variable</h2>
+                    <p>Variabel pada JavaScript mengandung nilai tunggal (hanya berisi satu nilai). <br><br>Contoh:</p>
+
+                    <div id="demo1"></div>
+                </section>
+
+                <section>
+                    <h2>Creating a JavaScript Object (Single Line)</h2>
+                    <p>membuat Object standar basic pada JavaScript dengan satu baris.</p>
+
+                    <p id="demo2"></p>
+                </section>
+
+                <section>
+                    <h2>Creating a JavaScript Object (Multiple Lines)</h2>
+                    <p>Membuat Object pada JavaScript dengan lebih dari satu baris.</p>
+
+                    <p id="demo3"></p>
+                </section>
+
+                <section>
+                    <h2>Creating a JavaScript Object Using <code>new</code> Keywords</h2>
+                    <p>Membuat Object pada JavaScript menggunakan keyword atau kata kunci <code>new</code>.</p>
+
+                    <p id="demo4"></p>
+                </section>
+
+                <section>
+                    <h2>Creating JavaScript Objects Using a Constructor</h2>
+                    <p>Membuat Object pada JavaScript menggunakan konstruktor.</p>
+
+                    <p id="demo5"></p>
+                </section>
+
+                <!-- JavaScript External File -->
+                <script src="script.js"></script>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2022. Putu Sujane.</p>
+        </footer>
+
+        <!-- Internal JavaScript -->
+        <script>
+
+            // Tulis kode JavaScript disini.
+            
+        </script>
+    </body>
+</html>
