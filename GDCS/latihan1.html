@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            color: red;
+        }
+
+        header, footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            box-sizing:  border-box;
+            height: 40px;
+            width: 100%;
+        }
+
+        header {
+            background-color: pink;
+        }
+
+        footer {
+            background-color: aqua;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .left-section, .right-section {
+            height: calc(100vh - 80px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-section {
+            width: 100%;
+            background-color: yellow;
+        }
+
+        .right-section {
+            width: 100%;
+            background-color: teal;
+        }
+
+        @media only screen and (min-width: 999px) {
+            main {
+                flex-direction: row;
+            }
+
+            .left-section {
+                width: 40%;
+            }
+
+            .right-section {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Ini adalah header
+    </header>
+
+    <main>
+        <div class="left-section">left section</div>
+        <div class="right-section">right section</div>
+    </main>
+
+    <footer>
+        this is Footer
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>
