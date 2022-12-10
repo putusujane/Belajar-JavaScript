@@ -18,6 +18,21 @@
         <!-- Internal CSS -->
         <style>
             /* Type CSS code here! */
+            #kotak {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            }
+
+            #demo8, #demo9, #demo10 {
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+            }
+
+            #demo8 {background-color: brown;}
+            #demo9 {background-color: tomato;}
+            #demo10 {background-color: lightseagreen;}
         </style>
     </head>
     <body>
@@ -63,6 +78,87 @@
                     <button type="button" onclick="myFunction1();">Lihat</button>
 
                     <p id="demo2"></p>
+                </section>
+
+                <section>
+                    <h2>The Links Collection</h2>
+        
+                    <h3>Display the Number of Links in a Document</h3>
+                    <p>Menampilkan jumlah link pada sebuah dokumen.</p>
+        
+                    <p>
+                        <a href="/html/default.asp">HTML</a>
+                        <a href="/css/default.asp">CSS</a>
+                    </p>
+        
+                    <p id="demo1a"></p>
+        
+                    <h3>Display the href Attribute of the First Link in a Document</h3>
+                    <p>Menampilkan atribut href link pertama pada dokumen</p>
+        
+                    <p id="demo2a"></p>
+                </section>
+        
+                <section>
+                    <h2>The Forms Collection</h2>
+        
+                    <h3>Find the Number of Forms in a Document</h3>
+                    <p>Mencari jumlah form pada dokumen.</p>
+        
+                    <form name="form1" action="">
+                        First name: <input type="text" name="fName" id="fName" value="Putu"> <br>
+                        Last name: <input type="text" name="lName" id="lName" value="Sujane"> <br>
+                        <input type="submit" value="Submit">
+                    </form>
+        
+                    <form name="form2" action="">
+                        <input type="date" name="date" id="date">
+                    </form>
+                    <p id="demo3"></p>
+        
+                    <h3>Find the Name of the First Form in a Document</h3>
+                    <p>Mencari nama pada form pertama pada dokumen.</p>
+        
+                    <p id="demo4"></p>
+                </section>
+        
+                <section>
+                    <h2>The Images Collection</h2>
+        
+                    <h3>Return the Number of Images in a Document</h3>
+                    <p>Mengetahui berapa jumlah gambar atau image pada suatu dokumen.</p>
+        
+                    <img id="gbr1" src="https://www.w3schools.com/js/pic_htmltree.gif" alt="DOM Tree">
+                    <img id="gbr2" src="https://www.w3schools.com/js/pic_navigate.gif" alt="Struktur">
+        
+                    <p id="demo5"></p>
+        
+                    <h3>Return the id of The First Image in a Document</h3>
+                    <p>Menampilkan id gambar pertama pada suatu document.</p>
+        
+                    <p id="demo6"></p>
+                </section>
+        
+                <section>
+                    <h2>CSS Manipulation</h2>
+                    <p>Manipulasi CSS</p>
+        
+                    <h3>Change the Visibility of an HTML Element</h3>
+                    <p>Mengubah visibilitas pada elemen HTML</p>
+        
+                    <p id="demo7">Lorem ipsum dolor sit amet.</p>
+                    <button type="button" onclick="hideText();">Hide text</button>
+                    <button type="button" onclick="showText();">Show text</button>
+        
+                    <h3>Change the Background Color of an HTML Element</h3>
+                    <p>Mengubah warna background elemen HTML</p>
+        
+                    <p>Arahkan mouse diatas masing-masing kotak dibawah ini!</p>
+                    <div id="kotak">
+                        <div id="demo8" onmouseover="bgChange('brown');" onmouseout="bgChange('transparent');"></div>
+                        <div id="demo9" onmouseover="bgChange('tomato');" onmouseout="bgChange('transparent');"></div>
+                        <div id="demo10" onmouseover="bgChange('lightseagreen');" onmouseout="bgChange('transparent');"></div>
+                    </div>
                 </section>
             </article>
 
